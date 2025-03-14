@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="provitri.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+    
+    <section class="catalogo">
+        <div class="producto">
+            <img src="empanadass.jpg" alt="Producto 1">
+            <h3>EMPANADA</h3>
+            <p class="descripcion">empanadas de papa y carne .</p>
+            <p class="precio">$1800</p>
+            <button class="agregar-carrito" data-nombre="EMPANADA" data-precio="1800">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="papa rellena.jpg" alt="Producto 2">
+            <h3>PAPA RELLENA</h3>
+            <p class="descripcion">trae papa blanca,carne desmechada,arroz y huevo.</p>
+            <p class="precio">$2900</p>
+            <button class="agregar-carrito" data-nombre="PAPA RELLENA" data-precio="2900">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="pastel de yuca.jpg" alt="Producto 3">
+            <h3>PASTEL DE YUCA</h3>
+            <p class="descripcion">trae papa blanca,carne desmechada,arroz y huevo.</p>
+            <p class="precio">$2900</p>
+            <button class="agregar-carrito" data-nombre="PASTEL DE YUCA" data-precio="2900">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="bofe.jpg" alt="Producto 3">
+            <h3>BOFE</h3>
+            <p class="descripcion">la porcion viene acompañada con papa salada.</p>
+            <p class="precio">$5000</p>
+            <button class="agregar-carrito" data-nombre="BOFE" data-precio="5000">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="huevo cocido.jpg" alt="Producto 3">
+            <h3>HUEVO COCIDO</h3>
+             <p class="precio">$1000</p>
+             <button class="agregar-carrito" data-nombre="HUEVO COCIDO" data-precio="1000">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="aborrajado.jpg" alt="Producto 3">
+            <h3>ABORRAJADO</h3>
+            <p class="descripcion">esta relleno de jamon y quesillo y cubierto de platano maduro.</p>
+            <p class="precio">$3000</p>
+            <button class="agregar-carrito" data-nombre="ABORRAJADO" data-precio="3000">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="arepa de huevo.jpg" alt="Producto 3">
+            <h3>AREPA DE HUEVO</h3>
+            <p class="descripcion">en su interior trae huevo y carne molida y cubierta de harina de maiz.</p>
+            <p class="precio">$3000</p>
+            <button class="agregar-carrito" data-nombre="AREPA DE HUEVO" data-precio="3000">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="salchichonimg.jpg" alt="Producto 3">
+            <h3>SALCHICHON</h3>
+            <p class="descripcion">viene acompañada de arepa frita.</p>
+            <p class="precio">$1000</p>
+            <button class="agregar-carrito" data-nombre="SALCHICHON" data-precio="1000">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="torta de carne.jpg" alt="Producto 3">
+            <h3>TORTA DE CARNE</h3>
+            <p class="descripcion">su cobertura es de harina y la carne es molida viene acompañada con arepa.</p>
+            <p class="precio">$3000</p>
+            <button class="agregar-carrito" data-nombre="TORTA DE CARNE" data-precio="3000">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="buñuelos.jpg" alt="Producto 3">
+            <h3>BUÑUELO</h3>
+             <p class="precio">$1000</p>
+             <button class="agregar-carrito" data-nombre="BUÑUELO" data-precio="1000">Agregar al carrito</button>
+            </div>
+        
+     </section>
+    
+     <section class="carrito">
+        <h2>🛒 Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total-carrito">Total: $0</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="realizar-pedido">Realizar Pedido</button>
+         
+
+    </section>
+    
+    <!-- Formulario de Pedido (Se ocultará por defecto) -->
+    <div id="formulario-pedido" class="oculto">
+        <h2>📦 Realizar Pedido</h2>
+        <form id="form-pedido">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="total">total:</label>
+            <input type="text" id="total" name="total" required readonly>
+
+            <label for="fecha">fecha:</label>
+            <input type="date" id="fecha" name="fecha" required readonly>
+    
+    
+    
+            <button type="submit">Enviar Pedido</button>
+            <button type="button" id="cerrar-formulario">Cancelar</button>
+
+        </form>
+    </div>
+    
+    
+    
+
+     <script src="carritovitri.js"></script>
+</body>
+</html>

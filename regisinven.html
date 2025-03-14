@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario del Restaurante</title>
+    <link rel="stylesheet" href="regisinven.css">
+    <!-- Add in the head section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+    <script defer src="regisinven.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Inventario</h1>
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Nombre del producto" required>
+            <input type="number" id="quantity" placeholder="Cantidad" required>
+            <input type="number" id="price" placeholder="Precio" step="0.01" required>
+            <div class="category-container">
+                <label for="category">Categoría:</label>
+                <select id="category" name="category">
+                    <option value="Bebidas en vaso">Bebidas en vaso</option>
+                    <option value="Bebidas en botella">Bebidas en botella</option>
+                    <option value="Desayunos">Desayunos</option>
+                    <option value="Comida rápida">Comida rápida</option>
+                </select>
+            </div>           
+            <input type="datetime-local" id="datetime" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Fecha y Hora</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="inventoryTable">
+                <!-- Aquí se agregarán los productos dinámicamente -->
+            </tbody>
+            
+        </table>
+        
+        <button id="downloadPDF" class="btn btn-primary">Descargar Reporte PDF</button>    </div>
+</body>
+</html>

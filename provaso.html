@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="provaso.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+    
+    <section class="catalogo">
+        <div class="producto">
+            <img src="img.png" alt="Producto 1">
+            <h3>TINTO</h3>
+             <p class="precio">$1000</p>
+             <button class="agregar-carrito" data-nombre="TINTO" data-precio="1000">Agregar al carrito</button>
+            </div>
+        
+        <div class="producto">
+            <img src="img.png" alt="Producto 2">
+            <h3>CAFE EN LECHE</h3>
+             <p class="precio">$1500</p>
+             <button class="agregar-carrito" data-nombre="CAFE EN LECHE" data-precio="1500">Agregar al carrito</button>
+            </div>
+        
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>AROMATICA</h3>
+             <p class="precio">$800</p>
+             <button class="agregar-carrito" data-nombre="AROMATICA" data-precio="800">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VASO LIMONADA PEQUEÑA</h3>
+             <p class="precio">$800</p>
+             <button class="agregar-carrito" data-nombre="VASO LIMONADA PEQUEÑA" data-precio="800">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VASO LIMONADA GRANDE</h3>
+             <p class="precio">$1600</p>
+             <button class="agregar-carrito" data-nombre="VASO LIMONADA GRANDE" data-precio="1600">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VASO MASATO PEQUEÑO</h3>
+             <p class="precio">$800</p>
+             <button class="agregar-carrito" data-nombre="VASO MASATO PEQUEÑO" data-precio="800">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VASO MASATO GRANDE</h3>
+             <p class="precio">$1600</p>
+             <button class="agregar-carrito" data-nombre="VASO MASATO GRANDE" data-precio="1600">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VASO GASEOSA PEQUEÑO</h3>
+             <p class="precio">$800</p>
+             <button class="agregar-carrito" data-nombre="VASO GASEOSA PEQUEÑO" data-precio="800">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VASO GASEOSA GRANDE</h3>
+             <p class="precio">$1600</p>
+             <button class="agregar-carrito" data-nombre="VASO GASEOSA GRANDE" data-precio="1600">Agregar al carrito</button>
+            </div>
+
+        
+     </section>
+     <section class="carrito">
+        <h2>🛒 Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total-carrito">Total: $0</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="realizar-pedido">Realizar Pedido</button>
+         
+
+    </section>
+    
+    <!-- Formulario de Pedido (Se ocultará por defecto) -->
+    <div id="formulario-pedido" class="oculto">
+        <h2>📦 Realizar Pedido</h2>
+        <form id="form-pedido">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="total">total:</label>
+            <input type="text" id="total" name="total" required readonly>
+
+            <label for="fecha">fecha:</label>
+            <input type="date" id="fecha" name="fecha" required readonly>
+    
+    
+    
+            <button type="submit">Enviar Pedido</button>
+            <button type="button" id="cerrar-formulario">Cancelar</button>
+
+        </form>
+    </div>
+    
+       
+     <script src="carritovaso.js"></script>
+
+</body>
+</html>

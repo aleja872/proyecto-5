@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Gestión</title>
+    <link rel="stylesheet" href="interadmi.css">
+</head>
+<body>
+
+    <header>
+        <h1>Panel de Gestión</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="card" onclick="redirigir('inventario.php')">
+                <h2>📦 Revisar Inventario</h2>
+            </div>
+            <div class="card" onclick="redirigir('menu.php')">
+                <h2>📜 Revisar Menú</h2>
+            </div>
+            <div class="card" onclick="redirigir('facturas.php')">
+                <h2>🧾 Revisar Facturas</h2>
+            </div>
+            <div class="card" onclick="redirigir('pedidos.php')">
+                <h2>🛒 Revisar Pedidos</h2>
+            </div>
+        </div>
+    </main>
+
+    <script src="interadmi.js"></script>
+</body>
+</html>

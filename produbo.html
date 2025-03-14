@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="produbo.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+    
+    <section class="catalogo">
+        <div class="producto">
+            <img src="img.png" alt="Producto 1">
+            <h3>POSTOBON 250ML</h3>
+             <p class="precio">$2000</p>
+             <button class="agregar-carrito" data-nombre="POSTOBON 250ML" data-precio="2000">Agregar al carrito</button>
+            </div>
+        
+        <div class="producto">
+            <img src="img.png" alt="Producto 2">
+            <h3>POSTOBON 500ML</h3>
+             <p class="precio">$3200</p>
+             <button class="agregar-carrito" data-nombre="POSTOBON 500ML" data-precio="3200">Agregar al carrito</button>
+            </div>
+        
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>COCA COLA 500ML</h3>
+             <p class="precio">$3200</p>
+             <button class="agregar-carrito" data-nombre="COCA COLA 500ML" data-precio="3200">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>NATU MALTA 250ML</h3>
+             <p class="precio">$2000</p>
+             <button class="agregar-carrito" data-nombre="NATU MALTA 250ML" data-precio="2000">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>NATU MALTA 400ML</h3>
+             <p class="precio">$2800</p>
+             <button class="agregar-carrito" data-nombre="NATU MALTA 400ML" data-precio="2800">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>AGUA 250ML</h3>
+             <p class="precio">$1000</p>
+             <button class="agregar-carrito" data-nombre="AGUA 250ML" data-precio="1000">Agregar al carrito</button>
+            </div>
+        
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>SPEDD</h3>
+             <p class="precio">$2000</p>
+             <button class="agregar-carrito" data-nombre="SPEDD" data-precio="2000">Agregar al carrito</button>
+            </div>
+        
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>VIVE100 </h3>
+             <p class="precio">$3000</p>
+             <button class="agregar-carrito" data-nombre="VIVE100" data-precio="3000">Agregar al carrito</button>
+            </div>
+        
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>SAVILOE</h3>
+             <p class="precio">$2800</p>
+             <button class="agregar-carrito" data-nombre="SAVILOE" data-precio="2800">Agregar al carrito</button>
+            </div>
+        
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>JUGO HIT</h3>
+             <p class="precio">$2800</p>
+             <button class="agregar-carrito" data-nombre="JUGO HIT" data-precio="2800">Agregar al carrito</button>
+            </div>
+
+        <div class="producto">
+            <img src="img.png" alt="Producto 3">
+            <h3>COCA COLA LITRO</h3>
+             <p class="precio">$5000</p>
+             <button class="agregar-carrito" data-nombre="COCA COLA LITRO" data-precio="5000">Agregar al carrito</button>
+            </div>
+    </section>
+    <section class="carrito">
+        <h2>🛒 Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total-carrito">Total: $0</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="realizar-pedido">Realizar Pedido</button>
+         
+
+    </section>
+    
+    <!-- Formulario de Pedido (Se ocultará por defecto) -->
+    <div id="formulario-pedido" class="oculto">
+        <h2>📦 Realizar Pedido</h2>
+        <form id="form-pedido">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="total">total:</label>
+            <input type="text" id="total" name="total" required readonly>
+
+            <label for="fecha">fecha:</label>
+            <input type="date" id="fecha" name="fecha" required readonly>
+    
+    
+    
+            <button type="submit">Enviar Pedido</button>
+            <button type="button" id="cerrar-formulario">Cancelar</button>
+
+        </form>
+    </div>
+    
+    
+    <script src="carritobo.js"></script>
+
+</body>
+</html>
